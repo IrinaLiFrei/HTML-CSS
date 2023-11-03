@@ -1,4 +1,42 @@
-.image {
-    width: 200px;
-    height: 400px;
+a {
+    text-decoration: none;
 }
+
+.image {
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+}
+.menu_link {
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px;
+}
+p   {
+    font-style: normal;
+    font-weight: 150;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+}
+.p_heading   {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 15px;
+    color: black;
+    font-weight: bolder;
+}
+.heading {
+    color: #222222;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+}
+h2 {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+}
+
