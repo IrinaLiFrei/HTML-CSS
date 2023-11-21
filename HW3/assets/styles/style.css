@@ -41,6 +41,7 @@ body {
     justify-content: space-between;
     width: 1170px;
     margin: 0 auto;
+    align-items: center;
 }
 
 
@@ -75,11 +76,19 @@ body {
     margin-right: auto;
 }
 
+.intro_left {
+    width: 522px;
+    height: 374px;
+
+}
+
 .intro_title {
     color: #000;
     font-family: Gilroy-Bold;
     font-size: 60px;
+    font-style: normal;
     font-weight: 400;
+    line-height: normal;
 }
 
 .intro_text {
@@ -101,6 +110,7 @@ body {
     font-family: Gilroy-Bold;
     font-size: 15px;
     font-weight: 400;
+    line-height: normal;
 }
 
 .intro_link {
@@ -109,11 +119,13 @@ body {
     font-family: Gilroy-Bold;
     font-size: 15px;
     font-weight: 400;
+    line-height: 52px;
 }
 
 .intro_button_wrapper {
     display: flex;
     gap: 72px;
+    vertical-align: auto;
 }
 
 .logos {
