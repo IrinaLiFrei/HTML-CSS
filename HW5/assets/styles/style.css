@@ -33,6 +33,7 @@
 
 .center {
     max-width: 1140px;
+    margin: 0 auto;
 }
 
 .header-container {
@@ -53,6 +54,7 @@
     display: flex;
     gap: 41px;
     padding-left: 10px;
+    align-items: flex-end;
 }
 
 .header-right {
@@ -66,23 +68,25 @@
     width: 232px;
     position: absolute;
     display: none;
-    border: 1px solid black;
     background-color: white;
     right: 0;
     top: 75px;
     font-family: "Lato-Regular";
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 400;
     padding-top: 32px;
     padding-left: 33px;
     z-index: 2;
+    height: 634px;
 }
 
 .menu__title {
-    margin-bottom: 24px;
+    margin-bottom: 4px;
+    font-weight: 700;
 }
 
 .menu__category {
+    margin-top: 20px;
     margin-bottom: 12px;
     color: #F16D7F;
 }
@@ -122,7 +126,6 @@
     font-weight: 400;
 }
 
-
 .title {
     background-color: #F1E4E6;
 }
@@ -131,8 +134,6 @@
     display: flex;
     justify-content: center;
     gap: 64px;
-    height: auto;
-    position: relative;
 }
 
 .title-box {
@@ -164,8 +165,8 @@
 }
 
 .categories {
-    display: flex;
-    justify-content: center;
+    /*     display: flex;
+    justify-content: center; */
 }
 
 .categories-container {
@@ -231,7 +232,6 @@
 .products-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -261,6 +261,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 30px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .product-img-box {
@@ -315,7 +318,6 @@
     flex-direction: column;
     gap: 16px;
     padding: 24px 16px;
-    width: 315px;
 }
 
 .product__name {
@@ -381,7 +383,6 @@
     gap: 19px;
 }
 
-
 .pluses-name {
     color: #FBFBFB;
     font-family: "Lato-Regular";
@@ -400,7 +401,7 @@
 }
 
 .subscribe {
-    background-image: url("./background.png");
+    background-image: url("./background_layer.png");
     background-position: center;
     background-size: cover;
     height: 448px;
@@ -412,7 +413,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 327px;
+    gap: 200px;
 }
 
 .moto {
@@ -423,7 +424,7 @@
 }
 
 .moto-text {
-    width: 350px;
+    max-width: 350px;
     color: #222224;
     text-align: center;
     font-family: "Lato-Regular";
@@ -464,21 +465,17 @@
 }
 
 .subscribe-form {
-    padding-top: 32px;
-}
-
-.subscribe-form {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .email-button {
     background-color: #E1E1E1;
     border: none;
-    width: 256px;
+    max-width: 256px;
     height: 49px;
-    border-radius: 20px 0 0 20px;
-
+    border-radius: 24px 0 0 24px;
 }
 
 .text-3 {
@@ -492,7 +489,7 @@
 .submit-button {
     width: 100px;
     height: 49px;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 24px 24px 0;
     background-color: #F16D7F;
     color: white;
     font-family: "Lato-Regular";
@@ -518,14 +515,14 @@
     font-family: "Lato-Regular";
     font-size: 16px;
     font-weight: 400;
-    padding-left: 10px;
+    padding-left: 30px;
 }
 
 .social-signs {
     display: flex;
     justify-content: flex-end;
     gap: 8px;
-    padding-right: 10px;
+    padding-right: 30px;
 }
 
 .social-item {
@@ -565,8 +562,6 @@
     }
 
     .title-container {
-        max-width: 100%;
-        justify-content: center;
         gap: 39px;
     }
 
@@ -592,7 +587,6 @@
     }
 
     .categories-container {
-        /* max-width: px; */
         margin-left: 16.5px;
         margin-right: 16.5px;
     }
@@ -603,6 +597,14 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         gap: 19px;
+        margin-top: 73.74px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .button {
+        margin-top: 32px;
+        margin-bottom: 74.5px;
     }
 
     .pluses-block {
@@ -613,6 +615,8 @@
         gap: 48.16px;
         justify-content: center;
     }
+
+    .pluses-text {}
 
     .subscribe {
         height: 693px;
@@ -626,20 +630,18 @@
 
     .moto {
         height: 225px;
-        margin-top: 64px;
+        margin-top: 16px;
     }
 
     .subscribe-form {
         padding-top: 27px;
         padding-bottom: 140px;
     }
-
 }
 
 /* ========МОБИЛЬНИК======== */
 
 @media screen and (max-width: 767px) {
-
 
     .header {
         margin-left: 16px;
@@ -685,29 +687,32 @@
         margin-top: 64px;
     }
 
-    .categories {
-        /*      display: flex;
-        flex-direction: column; */
-    }
-
     .category-card {
         grid-column: 1 / 3;
     }
 
     .categories-container {
+        margin-top: 64px;
         grid-template-columns: 1fr;
+        margin-left: 16px;
+        margin-right: 16px;
+        gap: 32px;
     }
 
     .products-cards-container {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        gap: 15.5px;
+        gap: 16.61px;
         margin-top: 65px;
+        margin-left: 8px;
+        margin-right: 8px;
     }
 
+
+
     .button {
-        margin-top: 40.61px;
-        margin-bottom: 96px;
+        margin-top: 64px;
+        margin-bottom: 109px;
     }
 
     .subscribe {
@@ -734,6 +739,21 @@
     .subscribe-form {
         padding-top: 22.15px;
         padding-bottom: 110px;
+    }
+
+    .subscribe-text, .text-2 {
+        line-height: 153.2%;
+    }
+
+    .email-button {
+        max-width: 245 px;
+        height: 47px;
+        border-radius: 24px 0 0 24px;
+    }
+
+    .submit-button {
+        width: 95px;
+        height: 47px;
     }
 
     .social-box {
